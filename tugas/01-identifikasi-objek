@@ -3,3 +3,5 @@
 - npm     : integer
 - alamat  : string
 ------
+- bayarSPP(): void
+- bayarHER(): void
