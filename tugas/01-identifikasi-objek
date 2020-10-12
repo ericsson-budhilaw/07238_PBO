@@ -1,7 +1,0 @@
-[ Mahasiswa ]
-- nama    : string
-- npm     : integer
-- alamat  : string
-------
-- bayarSPP(): void
-- bayarHER(): void
