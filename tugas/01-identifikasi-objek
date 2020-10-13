@@ -1,0 +1,8 @@
+Aplikasi Mengatur Data Mahasiswa
+
+[ Mahasiswa ]
+- nama    : string
+- npm     : integer
+- alamat  : string
+-----
+- 
