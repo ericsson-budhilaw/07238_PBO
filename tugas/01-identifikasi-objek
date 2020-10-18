@@ -5,4 +5,13 @@ Aplikasi Mengatur Data Mahasiswa
 - npm     : integer
 - alamat  : string
 -----
-- 
+- TglLahir : string
+- Jurusan : string
+- DosenPembimbing : string
+- Umur : integer
+- TinggiBadan : string
+-----------
+- BayarSPP() : void
+- BayarHER() : void
+
+-----
