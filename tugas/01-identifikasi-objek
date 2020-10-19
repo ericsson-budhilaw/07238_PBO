@@ -1,18 +1,12 @@
-Aplikasi Mengatur Data Mahasiswa
+Aplikasi manajemen data sekolah.
 
-[ Mahasiswa ]
-- nama    : string
-- npm     : integer
-- alamat  : string
------
-- TglLahir : string
-- Jurusan : string
-- DosenPembimbing : string
-- Umur : integer
-- TinggiBadan : string
+[ Siswa ]
+- nama          : string
+- kelas         : string
+- nis           : integer
+- alamat        : string
 -----------
-- BayarSPP() : void
-- BayarHER() : void
-- BayarDPP() : void
-- BayarPraktikum() : void
+- BayarSPP()    : void
+- BayarHER()    : void
+- BayarDPP()    : void
 -----
