@@ -13,5 +13,8 @@ Aplikasi Mengatur Data Mahasiswa
 -----------
 - BayarSPP() : void
 - BayarHER() : void
-
+- BayarDPP() : void
+- BayarPraktikum() : void
+-----------
+- Tunggakan() : void
 -----
