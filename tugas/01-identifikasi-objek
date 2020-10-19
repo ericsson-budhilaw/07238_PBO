@@ -13,19 +13,20 @@ Aplikasi manajemen data sekolah.
 - BayarDPP()    : void
 -----
 
-[Kepsek]
+[StaffAdmin]
 - Nama              : String
-- NIP               : int
-- NUPTK             : int
-- StatusKepegawaian : string
-- Jabatan           : string
 - JenisKelamin      : string
 - Agama             : string
+- MasaKerja         : integer
+- Gaji              : integer
 --------------
-- MenyeleksiTugasGuru()
-- MembimbingGuru()
-- PenilaianSekolah()
+- MendataSiswa()
+- MendataGuru()
+= MendataKaryawan()
+- MenyusunRKAS()
+- MenyusunLaporanBerkala()
 --------------
+
 
 [Guru]
 - Nama              : String
@@ -33,6 +34,7 @@ Aplikasi manajemen data sekolah.
 - NUPTK             : int
 - StatusKepegawaian : string
 - Jabatan           : string
+- Gaji              : integer
 - JenisKelamin      : string
 - Agama             : string
 - MataPelajaran     : string
