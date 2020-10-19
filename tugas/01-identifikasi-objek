@@ -5,8 +5,37 @@ Aplikasi manajemen data sekolah.
 - kelas         : string
 - nis           : integer
 - alamat        : string
+- JenisKelamin  : string
+- Agama         : string
 -----------
 - BayarSPP()    : void
 - BayarHER()    : void
 - BayarDPP()    : void
 -----
+
+[Kepsek]
+- Nama              : String
+- NIP               : int
+- NUPTK             : int
+- StatusKepegawaian : string
+- Jabatan           : string
+- JenisKelamin      : string
+- Agama             : string
+--------------
+- MenyeleksiTugasGuru()
+- MembimbingGuru()
+- PenilaianSekolah()
+--------------
+
+[Guru]
+- Nama              : String
+- NIP               : int
+- NUPTK             : int
+- StatusKepegawaian : string
+- Jabatan           : string
+- JenisKelamin      : string
+- Agama             : string
+- MataPelajaran     : string
+--------------
+- NilaiMurid()
+- PindahKelas()
