@@ -4,47 +4,46 @@ Aplikasi manajemen data sekolah.
 - nama          : string
 - kelas         : string
 - nis           : integer
-- alamat        : string
-- JenisKelamin  : string
-- Agama         : string
 -----------
-- BayarSPP()    : void
-- BayarHER()    : void
-- BayarDPP()    : void
+- add()         : void
+- update()      : void
+- delete()      : void
+- read()        : void
+- addNama()     : void
+- addKelas()    : void
+- addNis()      : void
 -----
 
 [Kepsek]
 - Nama              : String
 - NIP               : int
 - NUPTK             : int
-- StatusKepegawaian : string
-- Jabatan           : string
 - JenisKelamin      : string
-- Agama             : string
 --------------
-- MenyeleksiTugasGuru()
-- MembimbingGuru()
-- PenilaianSekolah()
+- add()             : void
+- update()          : void
+- delete()          : void
+- read()            : void
+- addNama()         : void
+- addNIP()          : void
+- addNUPTK()        : void
+- addGender()       : void
 --------------
 
 [Guru]
 - Nama              : String
 - NIP               : int
 - NUPTK             : int
-- StatusKepegawaian : string
-- Jabatan           : string
 - JenisKelamin      : string
-- Agama             : string
 - MataPelajaran     : string
 --------------
-- NilaiMurid()
-- PindahKelas()
+- add()             : void
+- update()          : void
+- delete()          : void
+- read()            : void
+- addNama()         : void
+- addNIP()          : void
+- addNUPTK()        : void
+- addGender()       : void
+- addSubject()      : void
 --------------
-
-[Jadwal]
-- masuk             : string
-- pulang            : string
-- jam               : int
-- mata pelajaran    : string
-- tgl/bln/thn       : int
----------------
