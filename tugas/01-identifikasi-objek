@@ -42,9 +42,7 @@ Aplikasi manajemen data sekolah.
 --------------
 
 [Jadwal]
-- masuk             : string
-- pulang            : string
-- jam               : int
-- mata pelajaran    : string
-- tgl/bln/thn       : int
----------------
+- jam kelas         : int <<-------- pilihan Pagi dan malam
+- mata pelajaran    : string <<----------- berserta jam Matkul
+
+--------------
