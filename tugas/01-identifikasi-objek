@@ -41,10 +41,3 @@ Aplikasi manajemen data sekolah.
 - PindahKelas()
 --------------
 
-[Jadwal]
-- masuk             : string
-- pulang            : string
-- jam               : int
-- mata pelajaran    : string
-- tgl/bln/thn       : int
----------------
