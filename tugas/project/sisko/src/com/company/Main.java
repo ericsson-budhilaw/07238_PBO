@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    static ArrayList<Ericsson07238_SiswaEntity> dataSiswa = new ArrayList();
+    static ArrayList<Siswa> dataSiswa = new ArrayList();
     static Scanner input;
 
     public static void main(String[] args) {
@@ -18,7 +18,8 @@ public class Main {
             System.out.println("[2] Tambah data");
             System.out.println("[3] Edit data");
             System.out.println("[4] Hapus data");
-            System.out.println("[5] Keluar");
+            System.out.println("[5] Login");
+            System.out.println("[6] Keluar");
             System.out.println("--------------------");
             System.out.print("Pilih menu> ");
 
@@ -40,14 +41,21 @@ public class Main {
                     delete(nis);
                     break;
                 case 5:
+                    login();
+                    break;
+                case 6:
                     System.exit(0);
                 default:
                     System.out.println("Kamu salah pilih menu!");
             }
-        } while(selectedMenu != 5);
+        } while(selectedMenu != 6);
     }
 
     static void add() {
+        System.out.println("Masukan Username: ");
+        String username = input.next();
+        System.out.println("Masukan Password: ");
+        String password = input.next();
         System.out.println("Masukan nama: ");
         String nama = input.next();
         System.out.println("Masukan Kelas: ");
@@ -55,10 +63,17 @@ public class Main {
         System.out.println("Masukan NIS: ");
         int nis = input.nextInt();
 
-        dataSiswa.add(new Ericsson07238_SiswaEntity(nama, kelas, nis));
+        dataSiswa.add(new Siswa(nama, kelas, nis, username, password));
+        Auth auth = new Auth(username, password);
+        auth.save();
+
     }
 
     static void update() {
+        System.out.println("Masukan Username: ");
+        String username = input.next();
+        System.out.println("Masukan Password: ");
+        String password = input.next();
         System.out.println("Masukan nama: ");
         String nama = input.next();
         System.out.println("Masukan Kelas: ");
@@ -67,7 +82,7 @@ public class Main {
         int nis = input.nextInt();
 
         // Menggunakan add karena user harus menginputkan kembali semua data
-        dataSiswa.add(new Ericsson07238_SiswaEntity(nama, kelas, nis));
+        dataSiswa.add(new Siswa(nama, kelas, nis, username, password));
     }
 
     static void read() {
@@ -91,6 +106,22 @@ public class Main {
                     dataSiswa.remove(i);
                 }
             }
+        }
+    }
+
+    static void login() {
+        System.out.println("Masukan Username: ");
+        String username = input.next();
+        System.out.println("Masukan Password: ");
+        String password = input.next();
+
+        Auth auth = new Auth(username, password);
+        boolean result = auth.login();
+
+        if(result) {
+            System.out.println("Login Berhasil !");
+        } else {
+            System.out.println("Login gagal !");
         }
     }
 }
