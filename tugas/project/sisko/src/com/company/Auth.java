@@ -22,11 +22,11 @@ public class Auth {
         return this.password;
     }
 
-    public void save() {
+    public void save(String username, String password) {
         Database.add(new Auth(username, password));
     }
 
-    public boolean login() {
+    public boolean login(String username, String password) {
         for(int i = 0; i < Database.size(); i++) {
             if(Database.get(i).getUsername().equals(username) && Database.get(i).getPassword().equals(password)) {
                 return true;

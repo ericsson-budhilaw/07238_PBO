@@ -63,9 +63,9 @@ public class Main {
         System.out.println("Masukan NIS: ");
         int nis = input.nextInt();
 
-        dataSiswa.add(new Siswa(nama, kelas, nis, username, password));
-        Auth auth = new Auth(username, password);
-        auth.save();
+        Siswa siswa = new Siswa(nama, kelas, nis, username, password);
+        dataSiswa.add(siswa);
+        siswa.save(username, password);
 
     }
 
@@ -82,7 +82,9 @@ public class Main {
         int nis = input.nextInt();
 
         // Menggunakan add karena user harus menginputkan kembali semua data
-        dataSiswa.add(new Siswa(nama, kelas, nis, username, password));
+        Siswa siswa = new Siswa(nama, kelas, nis, username, password);
+        dataSiswa.add(siswa);
+        siswa.save(username, password);
     }
 
     static void read() {
@@ -115,8 +117,8 @@ public class Main {
         System.out.println("Masukan Password: ");
         String password = input.next();
 
-        Auth auth = new Auth(username, password);
-        boolean result = auth.login();
+        Siswa siswa = new Siswa("", "", 0, username, password);
+        boolean result = siswa.login(username, password);
 
         if(result) {
             System.out.println("Login Berhasil !");
