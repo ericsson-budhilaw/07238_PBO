@@ -1,16 +1,15 @@
 package com.company;
 
-import java.util.Scanner;
-
-public class Siswa extends Auth {
+public class Siswa extends Kelas {
     protected String nama;
     protected int nis;
-    protected String kelas;
+    protected String mKelas;
 
-    public Siswa(String nama, String kelas, int nis, String username, String password) {
-        super(username, password);
+    Kelas kelas = new Kelas();
+
+    public Siswa(String nama, String mKelas, int nis) {
         this.nama = nama;
-        this.kelas = kelas;
+        this.mKelas = mKelas;
         this.nis = nis;
     }
 
@@ -23,6 +22,10 @@ public class Siswa extends Auth {
     }
 
     String getKelas() {
-        return this.kelas;
+        return this.mKelas;
+    }
+
+    String getJadwalKelas() {
+        return kelas.cekTipe(mKelas);
     }
 }

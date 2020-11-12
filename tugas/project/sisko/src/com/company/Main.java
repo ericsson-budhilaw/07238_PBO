@@ -5,12 +5,17 @@ import java.util.Scanner;
 
 public class Main {
 
-    static ArrayList<Siswa> dataSiswa = new ArrayList();
-    static Scanner input;
+    public ArrayList<Siswa> dataSiswa   = new ArrayList();
+    public Scanner input;
 
     public static void main(String[] args) {
+        Main m = new Main();
+        m.menu();
+    }
+
+    public void menu() {
         input = new Scanner(System.in);
-        int selectedMenu;
+        int selectedMenu, nis;
 
         do {
             System.out.println("==== Manajemen Data Siswa ====");
@@ -18,8 +23,7 @@ public class Main {
             System.out.println("[2] Tambah data");
             System.out.println("[3] Edit data");
             System.out.println("[4] Hapus data");
-            System.out.println("[5] Login");
-            System.out.println("[6] Keluar");
+            System.out.println("[5] Keluar");
             System.out.println("--------------------");
             System.out.print("Pilih menu> ");
 
@@ -33,29 +37,26 @@ public class Main {
                     add();
                     break;
                 case 3:
-                    update();
+                    System.out.println("Masukan NIS: ");
+                    nis = input.nextInt();
+
+                    update(nis);
                     break;
                 case 4:
                     System.out.println("Masukkan NIS: (Jika hapus semua data masukkan 0) ");
-                    int nis = input.nextInt();
+                    nis = input.nextInt();
+
                     delete(nis);
                     break;
                 case 5:
-                    login();
-                    break;
-                case 6:
                     System.exit(0);
                 default:
                     System.out.println("Kamu salah pilih menu!");
             }
-        } while(selectedMenu != 6);
+        } while(selectedMenu != 5);
     }
 
-    static void add() {
-        System.out.println("Masukan Username: ");
-        String username = input.next();
-        System.out.println("Masukan Password: ");
-        String password = input.next();
+    public void add() {
         System.out.println("Masukan nama: ");
         String nama = input.next();
         System.out.println("Masukan Kelas: ");
@@ -63,41 +64,47 @@ public class Main {
         System.out.println("Masukan NIS: ");
         int nis = input.nextInt();
 
-        Siswa siswa = new Siswa(nama, kelas, nis, username, password);
+        Siswa siswa = new Siswa(nama, kelas, nis);
         dataSiswa.add(siswa);
-        siswa.save(username, password);
-
     }
 
-    static void update() {
-        System.out.println("Masukan Username: ");
-        String username = input.next();
-        System.out.println("Masukan Password: ");
-        String password = input.next();
-        System.out.println("Masukan nama: ");
-        String nama = input.next();
-        System.out.println("Masukan Kelas: ");
-        String kelas = input.next();
-        System.out.println("Masukan NIS: ");
-        int nis = input.nextInt();
-
-        // Menggunakan add karena user harus menginputkan kembali semua data
-        Siswa siswa = new Siswa(nama, kelas, nis, username, password);
-        dataSiswa.add(siswa);
-        siswa.save(username, password);
-    }
-
-    static void read() {
+    public void update(int nis) {
         for(int i = 0; i < dataSiswa.size(); i++) {
-            System.out.println("--------------------");
-            System.out.println("Nama: " + dataSiswa.get(i).getNama());
-            System.out.println("NIS: " + dataSiswa.get(i).getNIS());
-            System.out.println("Kelas: " + dataSiswa.get(i).getKelas());
-            System.out.println("--------------------");
+            if(dataSiswa.get(i).getNIS() == nis) {
+                System.out.println("--------------------");
+                System.out.println("Nama: " + dataSiswa.get(i).getNama());
+                System.out.println("NIS: " + dataSiswa.get(i).getNIS());
+                System.out.println("Kelas: " + dataSiswa.get(i).getKelas());
+                System.out.println("--------------------");
+
+                System.out.println("Masukan nama: ");
+                String nama = input.next();
+                System.out.println("Masukan Kelas: ");
+                String kelas = input.next();
+                System.out.println("Masukan NIS: ");
+                int nisBaru = input.nextInt();
+
+                // Menggunakan add karena user harus menginputkan kembali semua data
+                dataSiswa.set(i, new Siswa(nama, kelas, nisBaru));
+            }
         }
     }
 
-    static void delete(int nis) {
+    public void read() {
+        if(dataSiswa.size() > 0) {
+            for (int i = 0; i < dataSiswa.size(); i++) {
+                System.out.println("--------------------");
+                System.out.println("Nama: " + dataSiswa.get(i).getNama());
+                System.out.println("NIS: " + dataSiswa.get(i).getNIS());
+                System.out.println("Kelas: " + dataSiswa.get(i).getKelas() + " [ " + dataSiswa.get(i).getJadwalKelas() + " ]");
+                System.out.println("--------------------");
+            }
+        } else {
+            System.out.println("Belum ada data.");
+        }
+    }
+
+    public void delete(int nis) {
         if(nis == 0) {
             dataSiswa.clear();
             System.out.println("Data berhasil dihapus");
@@ -108,22 +115,6 @@ public class Main {
                     dataSiswa.remove(i);
                 }
             }
-        }
-    }
-
-    static void login() {
-        System.out.println("Masukan Username: ");
-        String username = input.next();
-        System.out.println("Masukan Password: ");
-        String password = input.next();
-
-        Siswa siswa = new Siswa("", "", 0, username, password);
-        boolean result = siswa.login(username, password);
-
-        if(result) {
-            System.out.println("Login Berhasil !");
-        } else {
-            System.out.println("Login gagal !");
         }
     }
 }
