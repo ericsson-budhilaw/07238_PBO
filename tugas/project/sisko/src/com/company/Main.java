@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Main {
 
+    // Update git
     public ArrayList<Siswa> dataSiswa   = new ArrayList();
     public Scanner input;
 
