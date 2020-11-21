@@ -1,31 +1,43 @@
 package com.company;
 
-public class Siswa extends Kelas {
+public class Siswa extends Person {
     protected String nama;
+    protected String alamt;
     protected int nis;
-    protected String mKelas;
+    protected Kelas kelas;
 
-    Kelas kelas = new Kelas();
-
-    public Siswa(String nama, String mKelas, int nis) {
-        this.nama = nama;
-        this.mKelas = mKelas;
-        this.nis = nis;
+    public Siswa(int nis) {
+        this.nama   = super.nama;
+        this.alamt  = super.alamat;
+        this.nis    = nis;
+        kelas       = null;
     }
 
-    String getNama() {
+    public String getNama() {
         return this.nama;
     }
 
-    int getNIS() {
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getAlamat() {
+        return this.alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public int getNIS() {
         return this.nis;
     }
 
-    String getKelas() {
-        return this.mKelas;
+    public void setNis(int nis) {
+        this.nis = nis;
     }
 
-    String getJadwalKelas() {
-        return kelas.cekTipe(mKelas);
+    public void setKelas(Kelas kelas) {
+        this.kelas = kelas;
     }
 }

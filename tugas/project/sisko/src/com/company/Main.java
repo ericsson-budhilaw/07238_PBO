@@ -7,6 +7,7 @@ public class Main {
 
     // Update git
     public ArrayList<Siswa> dataSiswa   = new ArrayList();
+    public ArrayList<Kelas> dataKelas   = new ArrayList();
     public Scanner input;
 
     public static void main(String[] args) {
@@ -15,6 +16,8 @@ public class Main {
     }
 
     public void menu() {
+        init();
+
         input = new Scanner(System.in);
         int selectedMenu, nis;
 
@@ -58,14 +61,38 @@ public class Main {
     }
 
     public void add() {
-        System.out.println("Masukan nama: ");
+        String selectedKelas;
+
+        System.out.println("Masukan Nama: ");
         String nama = input.next();
-        System.out.println("Masukan Kelas: ");
-        String kelas = input.next();
+
+        System.out.println("Masukan Alamat: ");
+        String alamat = input.next();
+
         System.out.println("Masukan NIS: ");
         int nis = input.nextInt();
 
-        Siswa siswa = new Siswa(nama, kelas, nis);
+        System.out.println("Pilih Kelas yang diikuti: ");
+        for(int i = 0; i < dataKelas.size(); i++) {
+            System.out.print("[" + dataKelas.get(i).kode + "] ");
+            System.out.print(dataKelas.get(i).kelas + "\n");
+        }
+        System.out.print("Masukkan kode kelas yang dipilih: ");
+        selectedKelas = input.next();
+
+        Siswa siswa = new Siswa(nis);
+
+        for(int i = 0; i < dataKelas.size(); i++) {
+            if(dataKelas.get(i).kode.equals(selectedKelas)) {
+                Kelas kelas = new Kelas(dataKelas.get(i).kode, dataKelas.get(i).kelas);
+
+                dataKelas.get(i).setSiswa(siswa);
+                siswa.setKelas(kelas);
+            }
+        }
+
+        siswa.setNama(nama);
+        siswa.setAlamat(alamat);
         dataSiswa.add(siswa);
     }
 
@@ -75,18 +102,18 @@ public class Main {
                 System.out.println("--------------------");
                 System.out.println("Nama: " + dataSiswa.get(i).getNama());
                 System.out.println("NIS: " + dataSiswa.get(i).getNIS());
-                System.out.println("Kelas: " + dataSiswa.get(i).getKelas());
                 System.out.println("--------------------");
 
                 System.out.println("Masukan nama: ");
                 String nama = input.next();
-                System.out.println("Masukan Kelas: ");
-                String kelas = input.next();
+                System.out.println("Masukan Alamat: ");
+                String alamat = input.next();
                 System.out.println("Masukan NIS: ");
                 int nisBaru = input.nextInt();
 
-                // Menggunakan add karena user harus menginputkan kembali semua data
-                dataSiswa.set(i, new Siswa(nama, kelas, nisBaru));
+                dataSiswa.get(i).setNama(nama);
+                dataSiswa.get(i).setAlamat(alamat);
+                dataSiswa.get(i).setNis(nisBaru);
             }
         }
     }
@@ -96,8 +123,15 @@ public class Main {
             for (int i = 0; i < dataSiswa.size(); i++) {
                 System.out.println("--------------------");
                 System.out.println("Nama: " + dataSiswa.get(i).getNama());
+                System.out.println("Alamat: " + dataSiswa.get(i).getAlamat());
                 System.out.println("NIS: " + dataSiswa.get(i).getNIS());
-                System.out.println("Kelas: " + dataSiswa.get(i).getKelas() + " [ " + dataSiswa.get(i).getJadwalKelas() + " ]");
+
+                if(dataSiswa.get(i).kelas == null) {
+                    System.out.println("Kelas: -");
+                } else {
+                    System.out.println("Kelas: " + dataSiswa.get(i).kelas.kelas + " [ " + dataSiswa.get(i).kelas.kode + " ]");
+                }
+
                 System.out.println("--------------------");
             }
         } else {
@@ -117,5 +151,11 @@ public class Main {
                 }
             }
         }
+    }
+
+    public void init() {
+        dataKelas.add(new Kelas("MTK", "Matematika"));
+        dataKelas.add(new Kelas("FIS", "Fisika"));
+        dataKelas.add(new Kelas("BIO", "Biologi"));
     }
 }

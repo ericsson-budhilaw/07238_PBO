@@ -1,21 +1,17 @@
 package com.company;
 
-import java.util.HashMap;
-
 public class Kelas {
+    public String kode;
     public String kelas;
-    public HashMap<String, String> jadwal = new HashMap<String, String>();
+    public Siswa siswa;
 
-    public Kelas() {
-        jadwal.put("V", "Malam");
-        jadwal.put("W", "Malam");
-        jadwal.put("Q", "Pagi");
+    public Kelas(String kode, String kelas) {
+        this.kode = kode;
+        this.kelas = kelas;
+        siswa = null;
     }
 
-    /*
-     * Cek tipe kelas (Pagi atau Malam)
-     */
-    public String cekTipe(String kelas) {
-        return jadwal.getOrDefault(kelas, "Jadwal Salah");
+    public void setSiswa(Siswa siswa) {
+        this.siswa = siswa;
     }
 }
