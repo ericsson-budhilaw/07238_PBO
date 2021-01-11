@@ -1,53 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b249413e-8f2f-4f50-bd0f-90fbfe9a0803" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sisko/Entity/AslabEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sisko/Entity/KelasEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sisko/Entity/SiswaEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sisko/Entity/UserAbstractEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sisko/Model/AslabModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sisko/Model/KelasModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sisko/Model/ModelInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sisko/Model/SiswaModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sisko/Project/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sisko.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/AslabEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/KelasEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/SiswaEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/UserAbstractEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/AslabModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/KelasModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/ModelInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Model/SiswaModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Project/Main.java" beforeDir="false" />
-    </list>
+    <list default="true" id="8ac34e92-9e23-4032-b909-2d75ea430069" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,18 +10,20 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
-  <component name="ProjectId" id="1lKOacPE9HAdrSbfLgIQNG5g55h" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1mqKxmpXsVQVLSWIpT6vOHsnMuz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -75,62 +31,74 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\erics\Downloads\Compressed\07238_PBO-main\07238_PBO-main\praktikum\Modul3\sisko-praktikum\res" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\erics\Downloads\Compressed\07238_PBO-main\07238_PBO-main\praktikum\Modul3\sisko-praktikum\src\GUI\images" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Project.Main" />
+    <configuration name="Eric07238_Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Project.Eric07238_Main" />
       <module name="sisko" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Eric07238_Main" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b249413e-8f2f-4f50-bd0f-90fbfe9a0803" name="Default Changelist" comment="" />
-      <created>1607342380621</created>
+      <changelist id="8ac34e92-9e23-4032-b909-2d75ea430069" name="Default Changelist" comment="" />
+      <created>1610215931938</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1607342380621</updated>
-      <workItem from="1607342381750" duration="1020000" />
-      <workItem from="1608206912408" duration="704000" />
-      <workItem from="1608303795226" duration="134000" />
-      <workItem from="1608303939309" duration="972000" />
-      <workItem from="1608478342900" duration="11302000" />
-      <workItem from="1608534611726" duration="5049000" />
-      <workItem from="1608541226254" duration="84000" />
-      <workItem from="1608541784836" duration="281000" />
-      <workItem from="1608552098426" duration="69000" />
-      <workItem from="1608726727908" duration="52000" />
+      <updated>1610215931938</updated>
+      <workItem from="1610215934767" duration="2000" />
+      <workItem from="1610215978592" duration="17000" />
+      <workItem from="1610285432980" duration="58000" />
+      <workItem from="1610346993934" duration="13244000" />
+      <workItem from="1610367372757" duration="2802000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
