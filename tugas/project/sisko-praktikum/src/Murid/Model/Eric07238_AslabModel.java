@@ -1,9 +1,8 @@
-package Model;
+package Murid.Model;
 
-import Entity.Eric07238_AslabEntity;
+import Murid.Entity.Eric07238_AslabEntity;
 
 import java.util.ArrayList;
-import java.util.Map;
 
 public class Eric07238_AslabModel {
     public ArrayList<Eric07238_AslabEntity> aslabEntity = new ArrayList<>();

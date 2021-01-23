@@ -1,11 +1,10 @@
 package Project;
 
-import Controller.Eric07238_AslabController;
-import Controller.Eric07238_KelasController;
-import Controller.Eric07238_SiswaController;
-import Entity.Eric07238_SiswaEntity;
-import GUI.Eric07238_GUI;
-import Model.Eric07238_SiswaModel;
+import Murid.Controller.Eric07238_AslabController;
+import Murid.Controller.Eric07238_KelasController;
+import Murid.Controller.Eric07238_SiswaController;
+import Murid.Entity.Eric07238_SiswaEntity;
+import Murid.Model.Eric07238_SiswaModel;
 
 import java.util.Scanner;
 
@@ -17,7 +16,7 @@ import java.util.Scanner;
  */
 
 public class Eric07238_MainCLI {
-    /* Menerapkan Controller pada main */
+    /* Menerapkan Murid.Guru.Controller pada main */
     private Eric07238_SiswaController siswaController = new Eric07238_SiswaController();
     private Eric07238_AslabController aslabController = new Eric07238_AslabController();
     private Eric07238_KelasController kelasController = new Eric07238_KelasController();

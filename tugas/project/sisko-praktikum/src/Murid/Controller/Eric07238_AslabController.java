@@ -1,7 +1,7 @@
-package Controller;
+package Murid.Controller;
 
-import Entity.Eric07238_AslabEntity;
-import Model.Eric07238_AslabModel;
+import Murid.Entity.Eric07238_AslabEntity;
+import Murid.Model.Eric07238_AslabModel;
 
 public class Eric07238_AslabController {
 

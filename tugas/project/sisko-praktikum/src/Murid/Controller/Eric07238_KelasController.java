@@ -1,7 +1,7 @@
-package Controller;
+package Murid.Controller;
 
-import Entity.Eric07238_KelasEntity;
-import Model.Eric07238_KelasModel;
+import Murid.Entity.Eric07238_KelasEntity;
+import Murid.Model.Eric07238_KelasModel;
 
 public class Eric07238_KelasController {
 
