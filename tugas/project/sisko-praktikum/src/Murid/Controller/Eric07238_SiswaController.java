@@ -1,7 +1,7 @@
-package Controller;
+package Murid.Controller;
 
-import Entity.Eric07238_SiswaEntity;
-import Model.Eric07238_SiswaModel;
+import Murid.Entity.Eric07238_SiswaEntity;
+import Murid.Model.Eric07238_SiswaModel;
 
 public class Eric07238_SiswaController {
 

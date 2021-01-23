@@ -1,4 +1,4 @@
-package Entity;
+package Murid.Entity;
 
 public class Eric07238_SiswaEntity extends Eric07238_UserAbstractEntity {
     private String kelas;

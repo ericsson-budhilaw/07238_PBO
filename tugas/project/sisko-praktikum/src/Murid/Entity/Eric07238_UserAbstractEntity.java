@@ -1,4 +1,4 @@
-package Entity;
+package Murid.Entity;
 
 public abstract class Eric07238_UserAbstractEntity {
     protected String nama;

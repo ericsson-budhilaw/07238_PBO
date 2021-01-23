@@ -1,7 +1,6 @@
-package Model;
+package Murid.Model;
 
-import Entity.Eric07238_KelasEntity;
-import Entity.Eric07238_SiswaEntity;
+import Murid.Entity.Eric07238_SiswaEntity;
 
 import java.util.ArrayList;
 

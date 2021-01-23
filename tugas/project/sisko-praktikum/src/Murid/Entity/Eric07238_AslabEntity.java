@@ -1,9 +1,9 @@
-package Entity;
+package Murid.Entity;
 
-public class Eric07238_KelasEntity {
-    public String nama, kode;
+public class Eric07238_AslabEntity {
+    private String nama, kode;
 
-    public Eric07238_KelasEntity(String nama, String kode) {
+    public Eric07238_AslabEntity(String nama, String kode) {
         this.nama   = nama;
         this.kode   = kode;
     }
@@ -24,3 +24,4 @@ public class Eric07238_KelasEntity {
         this.kode = kode;
     }
 }
+
